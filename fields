@@ -1,0 +1,6 @@
+Name, email,mobile, pass, occupation.
+if ownerLiving
+    gender, dob
+else
+    ignore
+# of roomates, district, roomate gender (mostly, no preference), price

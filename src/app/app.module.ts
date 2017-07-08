@@ -5,8 +5,8 @@ import { AngularFireModule } from 'angularfire2';
 
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { FavouritesPage } from '../pages/favourites/favourites';
+import { ProfilePage } from '../pages/profile/profile';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SignInPage } from '../pages/signin/signin';
@@ -30,8 +30,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    FavouritesPage,
+    ProfilePage,
     HomePage,
     TabsPage,
     SignInPage,
@@ -48,8 +48,8 @@ export const firebaseConfig = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    ProfilePage,
+    FavouritesPage,
     HomePage,
     TabsPage,
     SignInPage,
