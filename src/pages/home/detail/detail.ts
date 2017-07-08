@@ -5,10 +5,6 @@ import {
  GoogleMaps,
  GoogleMap,
  GoogleMapsEvent,
- LatLng,
- CameraPosition,
- MarkerOptions,
- Marker
 } from '@ionic-native/google-maps';
 @Component({
   selector: 'page-detail',
@@ -20,9 +16,6 @@ export class DetailPage {
       this.navCtrl = navCtrl;
       this.navParams = navParams;
       this.flat = this.navParams.get('flat');
-      let element: HTMLElement = document.getElementById('map');
-
-      let map: GoogleMap = this.googleMaps.create(element);
   }
 
 
