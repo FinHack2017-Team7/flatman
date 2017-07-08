@@ -1,9 +1,25 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>Flat</ion-title>
+        <ion-title>{{flat.name}}</ion-title>
     </ion-navbar>
 </ion-header>
-<ion-content padding>
-    <img src="{{flat.photoUrl}}">
-    
+<ion-content>
+    <ion-card>
+        <img class='fullImage' style='width:100%' src="{{flat.photoUrl}}"/>
+        <ion-item>
+        <ion-icon name="bus" item-start large></ion-icon>
+        <h2>Transport</h2>
+        <p>{{flat.transport}}</p>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="wine" item-left large ></ion-icon>
+        <h2>Shopping</h2>
+        <p>{{flat.shopping}}</p>
+    </ion-item>
+
+    <ion-item>
+        <span item-left>{{flat.time}} Mins</span>
+        <span item-left>{{flat.distance}} KM</span>
+    </ion-item>
+    </ion-card>
 </ion-content>

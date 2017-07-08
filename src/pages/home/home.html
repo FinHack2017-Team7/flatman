@@ -4,15 +4,15 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-list>
       <ion-item *ngFor="let flat of flatList| async" (click)='goToDetail(flat)'>
         <ion-thumbnail item-start>
           <img src="{{flat.photoUrl}}">
         </ion-thumbnail>
-        <h2>{{flat.name}}</h2>
-        <p>$ {{flat.price}}</p>
-        <span>{{flat.size}}</span>
+        <h2><ion-icon name="compass"></ion-icon>  {{flat.location}}</h2>
+        <p><ion-icon name="cash"></ion-icon> $ {{flat.price}}</p>
+        <span>Need of People : {{flat.peopleSize}}</span>
         <button ion-button clear item-end>View</button>
       </ion-item>
   </ion-list>
