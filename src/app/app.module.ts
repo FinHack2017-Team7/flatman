@@ -17,6 +17,8 @@ import { CreatePage } from '../pages/home/create/create';
 import { SettingsPage } from '../pages/profile/settings/settings'
 import { AboutUsPage } from '../pages/profile/settings/about/about';
 import { BankPage } from '../pages/bank/bank';
+import { PerferencePage } from '../pages/profile/settings/perference/perference';
+
 import { NotificationPage } from '../pages/notification/notification';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -49,7 +51,8 @@ export const firebaseConfig = {
     AboutUsPage,
     BankPage,
     NotificationPage,
-    FlatmatePage
+    FlatmatePage,
+    PerferencePage
   ],
   imports: [
     BrowserModule,
@@ -74,7 +77,8 @@ export const firebaseConfig = {
     AboutUsPage,
     BankPage,
     NotificationPage,
-    FlatmatePage
+    FlatmatePage,
+    PerferencePage
   ],
   providers: [
     StatusBar,
