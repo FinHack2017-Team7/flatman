@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, App} from 'ionic-angular';
+import { NavController, App , Platform} from 'ionic-angular';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
@@ -14,7 +14,7 @@ export class SignInPage {
   // public user: Observable<firebase.User>;
   userProfile: any = null;
 
-  constructor(public navCtrl: NavController, public afAuth: AngularFireAuth) {
+  constructor(public navCtrl: NavController, public afAuth: AngularFireAuth, public plt :Platform) {
     // firebase.auth().onAuthStateChanged(user => {
     //   if (user) {
     //     this.userProfile = user;
@@ -31,9 +31,16 @@ export class SignInPage {
   }
 
   logIn() {
-    this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider()).then(result =>{
-      this.navCtrl.setRoot(TabsPage);
-    });
+    if (this.plt.is('mobileweb')) {
+      this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).then(result =>{
+         this.navCtrl.setRoot(TabsPage);
+      });
+    }else{
+      this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider()).then(result =>{
+        this.navCtrl.setRoot(TabsPage);
+      });
+    }
+   
   }
 
   signUp() {
