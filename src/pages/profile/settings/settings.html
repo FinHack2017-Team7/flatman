@@ -1,4 +1,5 @@
 <ion-header>
+
     <ion-navbar color="primary">
         <ion-title>
             Settings
@@ -7,9 +8,10 @@
 </ion-header>`
 
 <ion-content>
-    <ion-item-group>
-        <ion-item (click)="aboutUs()">About</ion-item>
-        <ion-item-divider color="light"></ion-item-divider>
-        <button ion-item color="danger" (click)="signOutUser()" style="text-align: center">Log Out</button>
-    </ion-item-group>
+    <ion-list>
+        <button ion-button block (click)="aboutUs()">About</button>
+        <button ion-button block (click)="goToPerference()" >Perference</button>
+        <button ion-button block color="danger" (click)="signOutUser()" >Log Out</button>
+    </ion-list>
+
 </ion-content>

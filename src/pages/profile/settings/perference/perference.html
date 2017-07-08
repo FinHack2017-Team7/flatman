@@ -1,0 +1,35 @@
+<ion-header>
+<ion-navbar color="primary">
+    <ion-title>User Perfence</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-list radio-group>
+	<ion-list-header>
+		Gender
+	</ion-list-header>
+	<ion-item>
+		<ion-label>Men</ion-label>
+		<ion-radio checked="true" value="go"></ion-radio>
+	</ion-item>
+
+	<ion-item>
+		<ion-label>Female</ion-label>
+		<ion-radio value="rust"></ion-radio>
+	</ion-item>
+  </ion-list>
+  <ion-list>
+  <ion-item>
+    <ion-label>Hobbies</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="nes">Sports</ion-option>
+      <ion-option value="n64">Shopping</ion-option>
+      <ion-option value="ps">Dining</ion-option>
+      <ion-option value="genesis">Hiking</ion-option>
+      <ion-option value="saturn">Greenery</ion-option>
+    </ion-select>
+  </ion-item>
+  <button ion-button full (click)='goToTabs()'>Save</button>
+</ion-list>
+</ion-content>
