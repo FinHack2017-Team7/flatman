@@ -1,8 +1,11 @@
 page-signin {
     ion-content{
-        background: color($colors,primary) !important;
+        background: #FBC02D !important;
     }
-
+    img {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .signinTitle {
         padding-top: 5rem;
         text-align: center;
