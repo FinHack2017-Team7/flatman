@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons start>
       <button ion-button icon-only (click)="goSettingsPage()">
         <ion-icon name="settings"></ion-icon>
@@ -10,13 +10,34 @@
 </ion-header>
 
 <ion-content>
-  <ion-row class="avatarBackdrop">
-    <ion-col width-25></ion-col>
-    <ion-col width-50 class="googleAvatar">
-      <img src="{{ user.photoURL }}" />
-    </ion-col>
-    <ion-col width-25></ion-col>
-  </ion-row>
+  <div class="avatarBackdrop">
+    <ion-row> 
+      <ion-col width-25></ion-col>
+      <ion-col width-50 class="googleAvatar">
+        <img src="{{ user.photoURL }}" />
+      </ion-col>
+      <ion-col width-25></ion-col>
+    </ion-row>
+    <p>
+      HKPU
+    </p>
+  </div>
+  <ion-list>
+    <button ion-item *ngFor="let info of infos">
+      <div class="fieldIcon">
+          <ion-icon name="{{ info.icon }}"> </ion-icon> 
+      </div>
+      {{ info.field }}
+      <!--<ion-row>
+        <ion-col width-49>
+          {{ info.field }}
+        </ion-col>
+        <ion-col width-49>
+          {{ info.value }}
+        </ion-col>
+      </ion-row>-->
+    </button>
+  </ion-list>
   <!--<ion-list>
     <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
