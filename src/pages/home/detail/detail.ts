@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController , NavParams} from 'ionic-angular';
 import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
-import {
- GoogleMaps,
- GoogleMap,
- GoogleMapsEvent,
-} from '@ionic-native/google-maps';
 @Component({
   selector: 'page-detail',
   templateUrl: 'detail.html'
