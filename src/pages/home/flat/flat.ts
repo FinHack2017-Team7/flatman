@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController , App , NavParams} from 'ionic-angular';
 import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
+
 @Component({
   selector: 'page-flat',
   templateUrl: 'flat.html'
