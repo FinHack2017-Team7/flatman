@@ -16,6 +16,8 @@ import { CreatePage } from '../pages/home/create/create';
 import { SettingsPage } from '../pages/profile/settings/settings'
 import { AboutUsPage } from '../pages/profile/settings/about/about';
 import { BankPage } from '../pages/bank/bank';
+import { PerferencePage } from '../pages/profile/settings/perference/perference';
+
 import { NotificationPage } from '../pages/notification/notification';
 import { MatchingPage } from '../pages/matching/matching';
 
@@ -51,6 +53,7 @@ export const firebaseConfig = {
     NotificationPage,
     FlatmatePage,
     MatchingPage,
+    PerferencePage
   ],
   imports: [
     BrowserModule,
@@ -77,6 +80,7 @@ export const firebaseConfig = {
     NotificationPage,
     FlatmatePage,
     MatchingPage
+    PerferencePage
   ],
   providers: [
     StatusBar,

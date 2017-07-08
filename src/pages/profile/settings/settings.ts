@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AboutUsPage } from './about/about';
+import { PerferencePage } from './perference/perference';
 
 import * as firebase from 'firebase/app';
 @Component({
@@ -18,6 +19,10 @@ export class SettingsPage {
 
   signOutUser() {
       firebase.auth().signOut();
+  }
+
+  goToPerference(){
+    this.navCtrl.push(PerferencePage);
   }
 
 }
