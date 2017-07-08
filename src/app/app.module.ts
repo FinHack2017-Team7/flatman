@@ -11,9 +11,13 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SignInPage } from '../pages/signin/signin';
 import { SignUpPage } from '../pages/signup/signup';
+import { DetailPage } from '../pages/home/detail/detail';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
 export const firebaseConfig = {
     apiKey: "AIzaSyBSbQ9pC0t76hvQPNt1o4kDgdlyAsia8Vk",
     authDomain: "finhack17.firebaseapp.com",
@@ -31,12 +35,15 @@ export const firebaseConfig = {
     HomePage,
     TabsPage,
     SignInPage,
-    SignUpPage
+    SignUpPage,
+    DetailPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,7 +53,8 @@ export const firebaseConfig = {
     HomePage,
     TabsPage,
     SignInPage,
-    SignUpPage
+    SignUpPage,
+    DetailPage
   ],
   providers: [
     StatusBar,
