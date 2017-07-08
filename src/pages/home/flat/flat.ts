@@ -14,7 +14,4 @@ export class FlatmatePage {
       this.flat = this.navParams.get('flat');
   }
 
-  goToDetail(flat){
-  }
-
 }

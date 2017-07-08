@@ -19,12 +19,14 @@ import { BankPage } from '../pages/bank/bank';
 import { PerferencePage } from '../pages/profile/settings/perference/perference';
 
 import { NotificationPage } from '../pages/notification/notification';
+import { MatchingPage } from '../pages/matching/matching';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { Ionic2RatingModule } from 'ionic2-rating';
+import { HttpModule } from '@angular/http';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyBSbQ9pC0t76hvQPNt1o4kDgdlyAsia8Vk",
@@ -50,6 +52,7 @@ export const firebaseConfig = {
     BankPage,
     NotificationPage,
     FlatmatePage,
+    MatchingPage,
     PerferencePage
   ],
   imports: [
@@ -58,7 +61,8 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    Ionic2RatingModule
+    Ionic2RatingModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -75,6 +79,7 @@ export const firebaseConfig = {
     BankPage,
     NotificationPage,
     FlatmatePage,
+    MatchingPage
     PerferencePage
   ],
   providers: [

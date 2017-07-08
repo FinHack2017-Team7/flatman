@@ -1,0 +1,36 @@
+<ion-header>
+<ion-navbar color="primary">
+    <ion-title>Matching</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background" (swipe)="swipeEvent($event)">
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon name="people"></ion-icon>
+      </ion-avatar>
+      <h2>{{ user.displayName }}</h2>
+      <p>{{ user.gender }}</p>
+    </ion-item>
+
+    <img src="{{ user.photoDisplay }}" />
+    <ion-card-content>
+      <h3>{{ user.school }}</h3>
+      <p> {{ user.description }}</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left (click)="approve()" clear small>
+          <ion-icon color="secondary" name="thumbs-up">Approve</ion-icon>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left (click)="disapprove()" clear small>
+          <ion-icon color="danger" name="thumbs-down">Next Time</ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
