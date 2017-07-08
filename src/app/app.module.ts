@@ -13,6 +13,8 @@ import { SignInPage } from '../pages/signin/signin';
 import { SignUpPage } from '../pages/signup/signup';
 import { DetailPage } from '../pages/home/detail/detail';
 import { CreatePage } from '../pages/home/create/create';
+import { SettingsPage } from '../pages/profile/settings/settings'
+import { AboutUsPage } from '../pages/profile/settings/about/about';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -40,6 +42,8 @@ export const firebaseConfig = {
     SignUpPage,
     DetailPage,
     CreatePage
+    SettingsPage,
+    AboutUsPage,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +64,8 @@ export const firebaseConfig = {
     SignUpPage,
     DetailPage,
     CreatePage
+    SettingsPage,
+    AboutUsPage,
   ],
   providers: [
     StatusBar,
