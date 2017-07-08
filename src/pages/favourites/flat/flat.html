@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>{{flat.name}}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class='background'>
+    <ion-card class='background'>
+        <img class='fullImage' style='width:100%' src="{{flat.photoUrl}}"/>
+        <ion-item>
+            <ion-icon name="list-box" item-start large color="primary"></ion-icon>
+            <h2>Rating</h2>
+            <rating [(ngModel)]="flat.rate" readOnly="false" ></rating>
+         </ion-item>
+        <ion-item-divider color="pirmary">Flatmate List</ion-item-divider>
+        <ion-item>
+            <h2>Eric - Boy - 23 years old -- HKBU</h2>
+            <button></button>
+        </ion-item>
+        <ion-item>
+            <h2>Sunny - Boy - 20 years old -- HKU</h2>
+        </ion-item>
+        <ion-item>
+            <h2>Mandy - Girl - 21 years old -- HKUST</h2>
+        </ion-item>
+        <ion-item>
+            <h2>Kai - Boy - 22 years old -- POLYU</h2>
+        </ion-item>
+    </ion-card>
+</ion-content>
