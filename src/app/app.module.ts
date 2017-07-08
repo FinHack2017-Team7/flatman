@@ -15,6 +15,7 @@ import { DetailPage } from '../pages/home/detail/detail';
 import { CreatePage } from '../pages/home/create/create';
 import { SettingsPage } from '../pages/profile/settings/settings'
 import { AboutUsPage } from '../pages/profile/settings/about/about';
+import { BankPage } from '../pages/bank/bank';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -44,6 +45,7 @@ export const firebaseConfig = {
     CreatePage,
     SettingsPage,
     AboutUsPage,
+    BankPage
   ],
   imports: [
     BrowserModule,
@@ -66,6 +68,7 @@ export const firebaseConfig = {
     CreatePage,
     SettingsPage,
     AboutUsPage,
+    BankPage
   ],
   providers: [
     StatusBar,

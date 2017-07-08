@@ -41,8 +41,11 @@ $colors: (
   dark:       #222,
   white:      #fff
 );
+$background-color :color($colors, dark);
 $tabs-ios-tab-icon-color:color($colors, dark);
 $tabs-md-tab-icon-color:color($colors, dark);
+$tabs-ios-tab-color-active : color($colors, dark);
+$tabs-md-tab-color-active	: color($colors, dark);
 $tabs-background:color($colors, primary);
 .toolbar-title-md{
 	color: color($colors, dark)!important;

@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
 import { NavController , App } from 'ionic-angular';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { DetailPage } from '../home/detail/detail';
 @Component({
-  selector: 'page-favourites',
-  templateUrl: 'favourites.html'
+  selector: 'page-bank',
+  templateUrl: 'bank.html'
 })
-export class FavouritesPage {
+export class BankPage {
   public favouriteList: FirebaseListObservable<any[]>;
   constructor(public navCtrl: NavController,public db: AngularFireDatabase,public appCtrl : App) {
-       this.favouriteList = this.db.list('/favourite');
   }
 
   goToDetail(flat){
-      this.appCtrl.getRootNav().push(DetailPage,{flat:flat});
   }
 
 }
