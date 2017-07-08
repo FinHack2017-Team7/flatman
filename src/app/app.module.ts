@@ -5,8 +5,7 @@ import { AngularFireModule } from 'angularfire2';
 
 import { MyApp } from './app.component';
 
-import { FavouritesPage } from '../pages/favourites/favourites';
-import { FlatmatePage } from '../pages/favourites/flat/flat'; 
+import { FlatmatePage } from '../pages/home/flat/flat'; 
 import { ProfilePage } from '../pages/profile/profile';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -39,7 +38,6 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-    FavouritesPage,
     ProfilePage,
     HomePage,
     TabsPage,
@@ -66,7 +64,6 @@ export const firebaseConfig = {
   entryComponents: [
     MyApp,
     ProfilePage,
-    FavouritesPage,
     HomePage,
     TabsPage,
     SignInPage,
