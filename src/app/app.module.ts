@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { SignInPage } from '../pages/signin/signin';
 import { SignUpPage } from '../pages/signup/signup';
 import { DetailPage } from '../pages/home/detail/detail';
+import { CreatePage } from '../pages/home/create/create';
 import { SettingsPage } from '../pages/profile/settings/settings'
 import { AboutUsPage } from '../pages/profile/settings/about/about';
 
@@ -19,6 +20,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { Ionic2RatingModule } from 'ionic2-rating';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyBSbQ9pC0t76hvQPNt1o4kDgdlyAsia8Vk",
@@ -39,6 +41,7 @@ export const firebaseConfig = {
     SignInPage,
     SignUpPage,
     DetailPage,
+    CreatePage
     SettingsPage,
     AboutUsPage,
   ],
@@ -47,7 +50,8 @@ export const firebaseConfig = {
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    Ionic2RatingModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -59,6 +63,7 @@ export const firebaseConfig = {
     SignInPage,
     SignUpPage,
     DetailPage,
+    CreatePage
     SettingsPage,
     AboutUsPage,
   ],

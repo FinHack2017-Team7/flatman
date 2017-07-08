@@ -1,24 +1,29 @@
 
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="primary">
         <ion-title>{{flat.name}}</ion-title>
     </ion-navbar>
 </ion-header>
-<ion-content>
-    <ion-card>
+<ion-content class='background'>
+    <ion-card class='background'>
         <img class='fullImage' style='width:100%' src="{{flat.photoUrl}}"/>
+         <ion-item>
+            <ion-icon name="list-box" item-start large color="primary"></ion-icon>
+            <h2>Rating</h2>
+            <rating [(ngModel)]="flat.rate" readOnly="false" ></rating>
+         </ion-item>
         <ion-item>
-            <ion-icon name="bus" item-start large></ion-icon>
+            <ion-icon name="home" item-start large color="primary"></ion-icon>
             <h2>Location</h2>
             <p>{{flat.location}}</p>
         </ion-item>
         <ion-item>
-            <ion-icon name="bus" item-start large></ion-icon>
+            <ion-icon name="bus" item-start large color="primary"></ion-icon>
             <h2>Transport</h2>
             <p>{{flat.transport}}</p>
         </ion-item>
         <ion-item>
-            <ion-icon name="wine" item-left large ></ion-icon>
+            <ion-icon name="wine" item-left large color="primary"></ion-icon>
             <h2>Shopping</h2>
             <p>{{flat.shopping}}</p>
         </ion-item>
@@ -27,16 +32,25 @@
             <span item-left>{{flat.distance}} KM</span>
         </ion-item>
         <img class="fullImage" src="http://l4c.me/uploads/gmapsjs-marker-map-1338661211_full550.png">
-        
         <ion-item>
-            <ion-icon name="bus" item-start large></ion-icon>
+            <ion-icon name="cash" item-start large color="primary"></ion-icon>
+            <h2>Price</h2>
+            <p>{{flat.price}}</p>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="bus" item-start large color="primary"></ion-icon>
             <h2>People Needs</h2>
             <p>{{flat.peopleSize}}</p>
         </ion-item>
         <ion-item>
-            <ion-icon name="wine" item-left large ></ion-icon>
+            <ion-icon name="wine" item-left large color="primary"></ion-icon>
             <h2>Size</h2>
             <p>{{flat.size}}</p>
         </ion-item>
     </ion-card>
 </ion-content>
+<ion-footer>
+  <ion-toolbar color="primary">
+        <div class="blackColorButton">Join Us</div>
+  </ion-toolbar>
+</ion-footer>
