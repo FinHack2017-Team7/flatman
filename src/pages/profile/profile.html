@@ -5,16 +5,23 @@
         <ion-icon name="settings"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>{{ displayName }}</ion-title>
+    <ion-title>{{ user.displayName }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <ion-row class="avatarBackdrop">
+    <ion-col width-25></ion-col>
+    <ion-col width-50 class="googleAvatar">
+      <img src="{{ user.photoURL }}" />
+    </ion-col>
+    <ion-col width-25></ion-col>
+  </ion-row>
+  <!--<ion-list>
     <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
       <ion-icon name="ionic" item-left></ion-icon>
       @ionicframework
     </ion-item>
-  </ion-list>
+  </ion-list>-->
 </ion-content>
