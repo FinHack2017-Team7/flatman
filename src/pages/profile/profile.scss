@@ -1,3 +1,18 @@
 page-profile {
 
 }
+
+
+.googleAvatar img {
+    
+}
+
+.avatarBackdrop {
+    background-color: color($colors, primary);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    img {
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+}

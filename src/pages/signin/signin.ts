@@ -15,19 +15,6 @@ export class SignInPage {
   userProfile: any = null;
 
   constructor(public navCtrl: NavController, public afAuth: AngularFireAuth, public plt :Platform) {
-    // firebase.auth().onAuthStateChanged(user => {
-    //   if (user) {
-    //     this.userProfile = user;
-    //   } else {
-    //     this.userProfile = null;
-    //   }
-    // });
-    // this
-    //         .afAuth
-    //         .authState
-    //         .subscribe(user => {
-    //           console.log(user);
-    //         })
   }
 
   logIn() {

@@ -10,12 +10,12 @@ import { SettingsPage } from './settings/settings';
 })
 
 export class ProfilePage {
+  public user : any;
 
-  displayName: string = "Profile";
   constructor(public navCtrl: NavController, public appCtrl: App, public afAuth: AngularFireAuth) {
     this.afAuth.authState.subscribe(user => {
-      console.log(user.displayName);
-      this.displayName = user.displayName;
+      this.user = user;
+      console.log(user);
     });
   }
 
