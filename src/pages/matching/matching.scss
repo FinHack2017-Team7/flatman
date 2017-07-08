@@ -1,0 +1,6 @@
+page-matching{
+    ion-item, ion-card-content, ion-item h2, ion-item p {
+        color: black !important;
+        background-color: color($colors, primary) !important ;
+    }
+}
