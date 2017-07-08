@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController , App } from 'ionic-angular';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { DetailPage } from '../home/detail/detail';
+import { FlatmatePage } from './flat/flat';
 @Component({
   selector: 'page-favourites',
   templateUrl: 'favourites.html'
@@ -13,7 +13,7 @@ export class FavouritesPage {
   }
 
   goToDetail(flat){
-      this.appCtrl.getRootNav().push(DetailPage,{flat:flat});
+      this.appCtrl.getRootNav().push(FlatmatePage,{flat:flat});
   }
 
 }
