@@ -79,7 +79,7 @@ export const firebaseConfig = {
     BankPage,
     NotificationPage,
     FlatmatePage,
-    MatchingPage
+    MatchingPage,
     PerferencePage
   ],
   providers: [
