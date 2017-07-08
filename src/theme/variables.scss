@@ -34,14 +34,22 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #ffb400,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  white:      #fff
 );
-
-
+$tabs-ios-tab-icon-color:color($colors, dark);
+$tabs-md-tab-icon-color:color($colors, dark);
+$tabs-background:color($colors, primary);
+.toolbar-title-md{
+	color: color($colors, dark)!important;
+}
+.toolbar-title-ios{
+	color: color($colors, dark)!important;
+}
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
