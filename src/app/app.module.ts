@@ -41,7 +41,7 @@ export const firebaseConfig = {
     SignInPage,
     SignUpPage,
     DetailPage,
-    CreatePage
+    CreatePage,
     SettingsPage,
     AboutUsPage,
   ],
@@ -63,7 +63,7 @@ export const firebaseConfig = {
     SignInPage,
     SignUpPage,
     DetailPage,
-    CreatePage
+    CreatePage,
     SettingsPage,
     AboutUsPage,
   ],
