@@ -6,6 +6,7 @@ import { AngularFireModule } from 'angularfire2';
 import { MyApp } from './app.component';
 
 import { FavouritesPage } from '../pages/favourites/favourites';
+import { FlatmatePage } from '../pages/favourites/flat/flat'; 
 import { ProfilePage } from '../pages/profile/profile';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -16,6 +17,7 @@ import { CreatePage } from '../pages/home/create/create';
 import { SettingsPage } from '../pages/profile/settings/settings'
 import { AboutUsPage } from '../pages/profile/settings/about/about';
 import { BankPage } from '../pages/bank/bank';
+import { NotificationPage } from '../pages/notification/notification';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -45,7 +47,9 @@ export const firebaseConfig = {
     CreatePage,
     SettingsPage,
     AboutUsPage,
-    BankPage
+    BankPage,
+    NotificationPage,
+    FlatmatePage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +72,9 @@ export const firebaseConfig = {
     CreatePage,
     SettingsPage,
     AboutUsPage,
-    BankPage
+    BankPage,
+    NotificationPage,
+    FlatmatePage
   ],
   providers: [
     StatusBar,
