@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AboutUsPage } from './about/about';
-import { PerferencePage } from './perference/perference';
+import { PreferencePage } from './preference/preference';
 
 import * as firebase from 'firebase/app';
 @Component({
@@ -22,7 +22,7 @@ export class SettingsPage {
   }
 
   goToPerference(){
-    this.navCtrl.push(PerferencePage);
+    this.navCtrl.push(PreferencePage);
   }
 
 }
