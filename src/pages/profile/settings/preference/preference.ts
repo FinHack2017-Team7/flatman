@@ -3,10 +3,10 @@ import { NavController ,App} from 'ionic-angular';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { ProfilePage } from '../../../profile/profile';
 @Component({
-  selector: 'page-perference',
-  templateUrl: 'perference.html'
+  selector: 'page-preference',
+  templateUrl: 'preference.html'
 })
-export class PerferencePage {
+export class PreferencePage {
   constructor(public navCtrl: NavController,public db: AngularFireDatabase,public appCtrl : App) {
   }
 
